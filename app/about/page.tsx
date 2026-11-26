@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ClinicalPhoto, EditorialIntro, editorialMeta } from "../for-clients/editorial";
+import OfficeAddress from "../office-address";
 
 export const metadata = editorialMeta(
   "/about", "About MSL Healthcare",
@@ -26,7 +27,7 @@ export default function AboutPage() {
     </section>
     <section className="agency"><div className="wrap duo">
       <div><p className="overline">Get in touch</p><h2>Contact MSL Healthcare</h2><p>Call to discuss registration, an existing booking or a staffing requirement.</p><a className="under" href="tel:03337332020">0333 733 2020</a></div>
-      <div className="ed-address"><h3>London office</h3><address>24 Bevis Marks House<br/>Bevis Marks<br/>London EC3A 7JB</address><Link className="under" href="/contact">Contact details and enquiries</Link></div>
+      <div className="ed-address"><h3>London office</h3><OfficeAddress /><Link className="under" href="/contact">Contact details and enquiries</Link></div>
     </div></section>
   </>;
 }

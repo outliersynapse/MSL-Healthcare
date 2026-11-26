@@ -1,5 +1,6 @@
 import { pageMeta } from "../metadata";
 import Link from "next/link";
+import OfficeAddress from "../office-address";
 
 const title = "Terms of use";
 const description = "Website operator details and how to request the relevant recruitment or staffing terms from MSL Healthcare.";
@@ -16,7 +17,7 @@ export default function TermsPage() {
       <section className="wrap section duo">
         <div><h2>Website operator</h2>
           <p>MSL Healthcare Limited is registered in England and Wales under company number 09970736.</p>
-          <address>24 Bevis Marks House<br />Bevis Marks<br />London EC3A 7JB</address>
+          <OfficeAddress />
         </div>
         <div><h2>Recruitment and staffing terms</h2>
           <p>Speak to a consultant for the terms that apply to a particular assignment or staffing request. For questions about registration documents, see the candidate compliance guide.</p>
